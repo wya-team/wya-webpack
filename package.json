@@ -1,8 +1,13 @@
 {
   "name": "wya-webpack",
   "version": "0.1.0",
-  "description": "basic env for js",
+  "description": "wya-webpack for js",
   "main": "index.js",
+  "files": [
+    "src/**",
+    "dist/**",
+    "examples/**"
+  ],
   "scripts": {
     "start": "npm run dev",
     "dev": "npm run prompt && npm run all",
@@ -11,7 +16,7 @@
     "build": "npm run dist -- -p",
     "build:dev": "npm run dist",
     "remove:dist": "rm -rf ./dist",
-    "lint": "esw ./config/*.config.* ./src/pages",
+    "lint": "esw ./config/*.config.* ./src/**/*.js",
     "lint:fix": "npm run lint -- --fix",
     "lint:watch": "npm run lint -- --fix --watch",
     "lint:style": "stylelint --fix --syntax scss src",
@@ -24,6 +29,13 @@
   },
   "author": "wya-team",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wya-team/wya-webpack"
+  },
+  "bugs": {
+    "url": "https://github.com/wya-team/wya-webpack/issues"
+  },
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^7.1.6",

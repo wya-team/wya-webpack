@@ -52,6 +52,7 @@ const webpackConfig = {
 	output: {
 		path: path.resolve(APP_ROOT, 'dist'),
 		filename: ENV_IS_DEV ? '[name].[hash:8].bundle.js' : `${libName}.min.js`,
+		libraryTarget: 'umd',
 		/**
 		 * html引用路径
 		 * publicPath: ENV_IS_DEV ? './' : 'https://cdn.example.com/'
