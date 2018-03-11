@@ -49,7 +49,7 @@ let demoConfig = {
 		 * html引用路径
 		 * publicPath: ENV_IS_DEV ? './' : 'https://cdn.example.com/'
 		 */
-		publicPath: '/wya-qrcode/demo'
+		publicPath: '/wya-webpack/demo'
 	},
 	plugins: [
 		/**
